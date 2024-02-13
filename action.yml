@@ -1,4 +1,4 @@
-name: 'Semver Release'
+name: 'Semver Release - Neebs'
 description: 'Automatically create Semver compliant tags or releases based on PR labels'
 author: 'Kévin Gomez'
 
@@ -32,7 +32,7 @@ outputs:
 
 runs:
   using: 'docker'
-  image: 'docker://kphoen/semver-release-action:v1.3.2'
+  image: 'docker://neebs12/semver-release-action:latest'
   args:
     - ${{ inputs.release_branch }}
     - ${{ inputs.release_strategy }}
